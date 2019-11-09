@@ -87,7 +87,7 @@ def wechat():
 
         if request.method == 'GET':
             #这里改写你在微信公众平台里输入的token
-            token = 'thulecture'
+            token = 'NMSL'
             #获取输入参数
             data = request.args
             signature = data.get('signature','')
@@ -113,7 +113,7 @@ def wechat():
 
             if message.MsgType == 'event':
                 print('subscribe')
-                message.text('山不在高，有林则徐。水不在深，有***。回复文字即可转换为抽象话，回复0或1可切换抽象模式到轻度或深度。')
+                message.text('无内鬼，来点抽象话。回复文字即可转换为抽象话，回复0或1可切换抽象模式到轻度或深度。')
 
             # message.text(message.Content)
             # pickle.dump(message.Content, open('message.txt', 'wb'))
