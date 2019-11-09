@@ -21,9 +21,9 @@ class  Message(object):
     """docstring for  Message"""
     def __init__(self, req):
         self.request = req    
-        self.token = 'thulecture'
-        self.AppID = 'wx0f12d0d1a1f763bf'
-        self.AppSecret = 'I343yWDXtxEOHLot6JVK9vnzgka52FKFEuUtAt6q4np'
+        self.token = 'NMSL'
+        self.AppID = 'wx9437d572f1cd7d04'
+        self.AppSecret = 'ecbb0aed360cf52a2631d2c0e78e77ad'
 
 class Post(Message):
     def __init__(self, req):
