@@ -105,8 +105,8 @@ def wechat():
             if hascode == signature:
                 return echostr
             else:
-                return echostr
-            return echostr   #爷怎么也通不过token验证，吐了
+                return 'NMSL 别乱连'
+            return echostr   
         if request.method == 'POST':
             message = Reply(request)
             cursor = con.cursor()
